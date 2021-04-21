@@ -46,17 +46,22 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TextLabelCell" id="0Zg-Sl-7jF" customClass="TextLabelCollectionCell" customModule="TextShowedAnimation" customModuleProvider="target">
-                                        <rect key="frame" x="3" y="0.0" width="408" height="88.5"/>
+                                        <rect key="frame" x="3" y="0.0" width="408" height="131.5"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bVv-Zd-Lep">
-                                            <rect key="frame" x="0.0" y="0.0" width="408" height="88.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="408" height="131.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你好，你刚才说的什么，我没听请，请再说一遍好吗？嗯哼，再说一遍，hello? 听得见吗？ 你好，听得见吗？" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ef-v5-eJL">
-                                                    <rect key="frame" x="20" y="12" width="368" height="64.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ef-v5-eJL">
+                                                    <rect key="frame" x="20" y="12" width="368" height="107.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="368" id="x3f-ot-vHe"/>
                                                     </constraints>
+                                                    <string key="text">版本号：3.2
+
+主要改动：
+新增妆容功能：唇彩、美瞳
+新增发色</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -75,7 +80,7 @@
                                         </connections>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Empty" id="xvK-Aj-Qea">
-                                        <rect key="frame" x="0.0" y="98.5" width="414" height="100"/>
+                                        <rect key="frame" x="0.0" y="141.5" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="RWM-Wd-DFV">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>

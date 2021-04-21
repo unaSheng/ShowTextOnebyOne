@@ -14,10 +14,9 @@ class ShapeView: UIView {
     var shapeLayer: CAShapeLayer { self.layer as! CAShapeLayer }
 }
 
-class TextAnimator: NSObject {
+class TextAnimator {
     
-    let textMaskView = ShapeView()
-    
+    private let textMaskView = ShapeView()
     private let attributedText: NSAttributedString
     private let textView: UIView
     private var textBounds: CGRect
@@ -42,13 +41,13 @@ class TextAnimator: NSObject {
             cursorImageView = UIImageView(image: image)
             cursorImageView?.frame = CGRect(origin: textView.frame.origin, size: image.size)
         }
-        super.init()
         
         attributedText.enumerateAttributes(in: NSRange(location: 0, length: 1), options: []) { (attributes, range, _) in
             if let font = attributes[.font] as? UIFont {
                 self.font = font
             }
         }
+        textView.mask = textMaskView
     }
     
     func stopAnimation() {
@@ -79,7 +78,12 @@ class TextAnimator: NSObject {
             let rect = textView.firstRect(for: tRange)
             path.append(UIBezierPath(rect: rect))
             paths.append(path.cgPath)
-            textRects.append(rect)
+            if textView.attributedText.attributedSubstring(from: NSRange(location: index, length: 1)).string == "\n" {
+                let newRect = CGRect(x: 0, y: rect.maxY, width: 0, height: rect.height)
+                textRects.append(newRect)
+            } else {
+                textRects.append(rect)
+            }
         }
         displayLink = CADisplayLink(target: self, selector: #selector(updateMaskPath))
         displayLink?.preferredFramesPerSecond = 10

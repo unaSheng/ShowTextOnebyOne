@@ -41,7 +41,6 @@ class TextLabelCollectionCell: UICollectionViewCell {
         textLabel.attributedText = NSAttributedString(string: textLabel.text!, attributes: [.font: textLabel.font!, .link: "http://www.google.com", .paragraphStyle: paragraphStyle])
         
         animator = TextAnimator.showText(textLabel.attributedText!, on: textLabel, cursor: UIImage(named: "cursor"))
-        textLabel.mask = animator.textMaskView
     }
     
     override func prepareForReuse() {
