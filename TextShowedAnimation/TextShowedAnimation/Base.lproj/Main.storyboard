@@ -89,18 +89,10 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="lyO-GB-AhX"/>
                                 </connections>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AtP-xz-bso">
-                                <rect key="frame" x="55" y="135" width="104" height="33"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="开始TextView"/>
-                                <connections>
-                                    <action selector="startTextViewAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uQJ-Y2-Jrn"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ta-Ox-2lY">
-                                <rect key="frame" x="269" y="135" width="76" height="33"/>
+                                <rect key="frame" x="289.5" y="135" width="35" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="开始Label"/>
+                                <state key="normal" title="开始"/>
                                 <connections>
                                     <action selector="startLableAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oYD-YV-I7a"/>
                                 </connections>
@@ -109,8 +101,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Joc-5Q-QCy" firstAttribute="top" secondItem="AtP-xz-bso" secondAttribute="bottom" constant="20" id="4xa-6r-Zfh"/>
-                            <constraint firstItem="AtP-xz-bso" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-100" id="58y-qK-xZv"/>
                             <constraint firstItem="Joc-5Q-QCy" firstAttribute="top" secondItem="1ta-Ox-2lY" secondAttribute="bottom" constant="20" id="6Dq-0j-1LE"/>
                             <constraint firstItem="Joc-5Q-QCy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FSM-q8-4vw"/>
                             <constraint firstItem="1ta-Ox-2lY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="100" id="PaO-m9-J1e"/>
